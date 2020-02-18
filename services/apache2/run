@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -e
+export APACHE_RUN_USER=apache
+export APACHE_RUN_GROUP=www-data
+
+
+export LANG=C
+export LANG
+
+exec /usr/sbin/httpd -DNO_DETACH -f /etc/apache2/httpd.conf
