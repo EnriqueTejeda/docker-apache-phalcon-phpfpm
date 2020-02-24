@@ -8,7 +8,7 @@ ARG PHALCON_EXT_PATH=php7/64bits
 
 # Install apache & utils pkg 
 RUN apk update && apk upgrade && \
-    apk add apache2 libpng-dev libxml2-dev libtool
+    apk add apache2 apache2-proxy libpng-dev libxml2-dev libtool
 
 COPY defaults/httpd.conf /etc/apache2/httpd.conf
 

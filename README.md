@@ -13,6 +13,7 @@ A docker image  with Apache + Phalcon + PHP-FPM 7.2 all in Alpine Linux with 40M
 
 * php-fpm with extensions (gd, mbstring, soap, xml, ctype, json)
 * apache2
+* apache2-proxy
 * libxml2-dev
 * libpng-dev
 * runit
